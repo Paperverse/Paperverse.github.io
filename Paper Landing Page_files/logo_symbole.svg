@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="32px" viewBox="0 0 48 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 4</title>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FA243C" offset="0%"></stop>
+            <stop stop-color="#B620E0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Landing" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Landing_new" transform="translate(-32.000000, -16.000000)">
+            <g id="Group-7" transform="translate(32.000000, 16.000000)">
+                <g id="Group">
+                    <rect id="Rectangle" stroke="#979797" fill="#D8D8D8" opacity="0.838020688" x="0.5" y="0.5" width="31" height="31" rx="15.5"></rect>
+                    <rect id="Rectangle" fill="#FA243C" x="0" y="0" width="32" height="32" rx="16"></rect>
+                    <rect id="Rectangle" fill="#FA243C" x="0" y="0" width="32" height="32" rx="16"></rect>
+                </g>
+                <rect id="Rectangle" fill="url(#linearGradient-1)" opacity="0.677303496" x="16" y="0" width="32" height="32" rx="16"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,40 @@
+gsap.registerPlugin(ScrollTrigger);
+
+const e = gsap.utils.toArray([".time-box"]);
+gsap
+  .timeline({
+    scrollTrigger: {
+      trigger: ".main-sixth-section",
+      start: "top 50%",
+      end: "bottom 50%",
+      scrub: true,
+      onToggle: () => console.log("toggled,isActive:"),
+      onUpdate: (data) => {
+        return onTimelineUpdate(data, e);
+      },
+      id: "time",
+    },
+  })
+  .to("#track-fill", {
+    backgroundPositionY: "0%",
+    ease: Linear.easeOut,
+  });
+
+function onTimelineUpdate(self, args) {
+  const len = 100 / args.length;
+  const visRecords = Linear.easeOut(self.progress) * 100;
+  const length = Math.ceil(visRecords / len) - 1;
+  for (let i = 0; i < args.length; i++) {
+    if (length === i) {
+      args[i].classList.add("active");
+    } else {
+      if (length > i) {
+        args[i].classList.remove("active");
+        args[i].classList.add("passed");
+      } else {
+        args[i].classList.remove("passed");
+        args[i].classList.remove("active");
+      }
+    }
+  }
+}
