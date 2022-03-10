@@ -22,6 +22,7 @@ gsap
 
 function onTimelineUpdate(self, args) {
   const len = 100 / args.length;
+  document.getElementById("track-fill").style.backgroundPositionY = 100 - Linear.easeOut(self.progress) * 100 + "%";
   const visRecords = Linear.easeOut(self.progress) * 100;
   const length = Math.ceil(visRecords / len) - 1;
   for (let i = 0; i < args.length; i++) {
