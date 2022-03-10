@@ -10883,7 +10883,7 @@ html :where(img) {
 }
 .main-seventh-section .faq-item:hover,
 .main-seventh-section .faq-item.selected {
-  border: 2px solid #ff375f;
+  border: 2px solid #ff617b;
 }
 .main-seventh-section .faq-item:hover .faq-item-heading {
   color: #ff375f;
@@ -10897,7 +10897,7 @@ html :where(img) {
 }
 .main-seventh-section .faq-item-heading:hover,
 .main-seventh-section .faq-item-heading.selected {
-  color: #ff375f;
+  color: #ff617b;
 }
 .main-seventh-section .faq-item-text {
   display: none;
